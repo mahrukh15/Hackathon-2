@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 const RelatedProducts  = () => {
   const products = [
@@ -33,7 +34,7 @@ const RelatedProducts  = () => {
             key={product.name}
             className="border border-gray-200 rounded-lg p-4 hover:shadow-md"
           >
-            <img src={product.image} alt={product.name} className="w-[305px] h-[375px] object-cover rounded-lg mb-4 border-box"  />
+            <Image src={product.image} alt={product.name} className="w-[305px] h-[375px] object-cover rounded-lg mb-4 border-box"  />
             <h3 className="text-lg font-semibold mb-2">{product.name}</h3>
             <p className="text-gray-600">£{product.price}</p>
           </div>
